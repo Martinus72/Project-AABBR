@@ -27,10 +27,12 @@ public class Main {
              System.out.println(" ------------------------------------------------------------- \n \n" +
                                 "                       Gestionnaire AABRR                      \n \n" +
                                 " 1) Réaliser un arbre à partir d'un fichier texte \n" +
-                                " 2) Réaliser un \n" +
+                                " 2) Réaliser un AABRR Aléatoire \n" +
                                 " 10) Quitter l'application \n \n" +
                                 " ------------------------------------------------------------- \n \n \n" +
                                 " Choix : ");
+
+             //Lecture de la réponse
              try {
 
                  menuChoix = scanner.nextInt();
@@ -42,11 +44,25 @@ public class Main {
 
              switch (menuChoix){
                  case 1 :
-                     System.out.println("Choix 1");
+                     creerAABRRviaFichier(aabrr);
+                     break;
                  case 2 :
-                     System.out.println("Choix 2");
+                     creerAABRRAleatoire(aabrr);
+                     break;
              }
         }
+
+        System.out.println("\n L'application a été fermée");
+
+    }
+
+    public static void creerAABRRviaFichier(AABRR aabrr){
+
+        boolean stop = false;
+
+    }
+
+    public static void creerAABRRAleatoire(AABRR aabrr){
 
     }
 }
